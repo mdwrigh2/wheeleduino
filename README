@@ -1,0 +1,15 @@
+A project that connects an Arduino-based car and an Android phone to control it.
+
+The communication is done entirely over Bluetooth with a byte-based protocol. The format is as follows:
+
+char - command result
+---------------------
+f - move forward
+b - back
+r - forward and right
+l - forward and left
+a - back right
+k - back left
+c - clockwise
+w - counter-clockwise
+s - stop
