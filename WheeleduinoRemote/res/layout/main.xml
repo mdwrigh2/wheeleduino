@@ -5,54 +5,74 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     <TableLayout
+      android:stretchColumns="*"
       android:layout_width="fill_parent"
       android:layout_height="wrap_content">
-        <TableRow>
+      <TableRow>
             <TextView
-                android:text="↖ "
+                android:id="@+id/topLeft"
+                android:text="↖"
                 android:layout_weight="1"
                 android:textSize="100sp"
+                android:gravity="left|center_vertical"
                 android:padding="3dip"/>
             <TextView
+                android:id="@+id/topCenter"
                 android:text="↑"
                 android:layout_weight="1"
                 android:textSize="75sp"
+                android:gravity="center_horizontal|center_vertical"
                 android:padding="3dip"/>
             <TextView
-                android:text="↗ "
+                android:id="@+id/topRight"
+                android:text="↗"
                 android:layout_weight="1"
                 android:textSize="100sp"
+                android:gravity="right|center_vertical"
+                android:layout_gravity="right"
                 android:padding="3dip"/>
         </TableRow>
         <TableRow>
             <TextView
-                android:text="↻ "
+                android:id="@+id/centerLeft"
+                android:text="↻"
                 android:layout_weight="1"
+                android:gravity="left|center_vertical"
                 android:textSize="100sp" />
             <TextView
-                android:text="⊕ "
+                android:id="@+id/centerCenter"
+                android:text="⊕"
                 android:layout_weight="1"
-                android:textSize="75sp" />
+                android:gravity="center_horizontal|center_vertical"
+                android:textSize="80sp" />
             <TextView
-                android:text="↺ "
+                android:id="@+id/centerRight"
+                android:text="↺"
                 android:layout_weight="1"
+                android:gravity="right|center_vertical"
                 android:textSize="100sp" />
         </TableRow>
         <TableRow>
             <TextView
-                android:text="↙ "
+                android:id="@+id/bottomLeft"
+                android:text="↙"
                 android:layout_weight="1"
                 android:textSize="100sp"
+                android:gravity="left|center_vertical"
                 android:padding="3dip"/>
             <TextView
+                android:id="@+id/bottomCenter"
                 android:text="↓"
                 android:layout_weight="1"
                 android:textSize="75sp"
+                android:gravity="center_horizontal|center_vertical"
                 android:padding="3dip"/>
             <TextView
-                android:text="↘ "
+                android:id="@+id/bottomRight"
+                android:text="↘"
                 android:layout_weight="1"
                 android:textSize="100sp"
+                android:gravity="right|center_vertical"
                 android:padding="3dip"/>
         </TableRow>
     </TableLayout>
